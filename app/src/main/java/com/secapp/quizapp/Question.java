@@ -28,11 +28,11 @@ public class Question {
     }
 
     public int getImgid() {
-        return rsid;
+        return imgid;
     }
 
-    public void setImgidid(int rsid) {
-        this.rsid = rsid;
+    public void setImgidid(int imgid) {
+        this.imgid = imgid;
     }
 
 }
