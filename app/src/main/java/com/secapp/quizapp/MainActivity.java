@@ -42,17 +42,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.truebt:
+            case R.id.truebt :
+                if (questionbank[cnt].getAns())
+                    Toast.makeText(MainActivity.this,"Correct Answer",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this,"Wrong Answer",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.falsebt :
+                if (questionbank[cnt].getAns())
+                    Toast.makeText(MainActivity.this,"Wrong Answer",Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this,"Correct Answer",Toast.LENGTH_SHORT).show();
+                break;
+            /*case R.id.truebt:
                 Toast.makeText(MainActivity.this,"TRUE",Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.falsebt:
                 Toast.makeText(MainActivity.this,"FALSE",Toast.LENGTH_SHORT).show();
-                break;
+                break;*/
 
             case R.id.nextbt:
-                if(cnt<4)
-                    cnt = (cnt+1) % questionbank.length;
+
+                cnt = (cnt+1) % questionbank.length;
                 questionview.setText(questionbank[cnt].getRsid());
                 //img.setImageResource(questionbank[cnt].getImgid());
                 break;
