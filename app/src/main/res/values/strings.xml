@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="true_button">True</string>
+    <string name="false_button">FALSE</string>
+    <string name="Question2">Pratt is a geek</string>
+    <string name="Question3"> Aarshee is Intelligent </string>
+    <string name="Question4">Kashyap is Smart</string>
+    <string name="Question5">Some Random Question</string>
+    <string name="nxt">Next</string>
+</resources>
