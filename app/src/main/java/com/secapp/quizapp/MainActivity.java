@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int cnt=0;
     private Question[] questionbank = new Question[]{
             new Question(R.string.Question2,true,R.drawable.ic_launcher_background),
-            new Question(R.string.Question3,false,R.drawable.aarshee),
+            new Question(R.string.Question3,false,R.drawable.ic_launcher_foreground),
             new Question(R.string.Question4,true,R.drawable.ic_launcher_foreground),
             new Question(R.string.Question5,true,R.drawable.ic_launcher_foreground)
     };
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 cnt = (cnt+1) % questionbank.length;
                 questionview.setText(questionbank[cnt].getRsid());
-                //img.setImageResource(questionbank[cnt].getImgid());
+            //    img.setImageResource(questionbank[cnt].getImgid());
                 break;
 
         }
