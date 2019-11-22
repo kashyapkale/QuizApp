@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(cnt<4)
                     cnt = (cnt+1) % questionbank.length;
                 questionview.setText(questionbank[cnt].getRsid());
-                img.setImageResource(questionbank[cnt].getImgid());
+                //img.setImageResource(questionbank[cnt].getImgid());
                 break;
 
         }
